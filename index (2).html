@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pavan Kalyan Itreddy | Multi-Cloud Engineer</title>
+<meta name="description" content="Multi-cloud engineer across Azure, AWS and GCP: architecture, security and governance, DevOps, Kubernetes and large-scale migrations.">
+<link rel="canonical" href="https://codewithkallyan.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://codewithkallyan.github.io/">
+<meta property="og:title" content="Pavan Kalyan Itreddy | Multi-Cloud Engineer">
+<meta property="og:description" content="Azure, AWS and GCP: landing zones, migrations, security, DevOps and Kubernetes.">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--bg:#f6f7fc;--surface:#fff;--text:#12152b;--muted:#586079;--border:#e1e5f2;--a1:#6d4aff;--a2:#00b8d9;--a3:#ff4d8d;--grad:linear-gradient(120deg,var(--a1),var(--a2) 55%,var(--a3));box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a0c1a;--surface:#141833;--text:#eef0ff;--muted:#a3abc9;--border:#262c52;--a1:#8b73ff;--a2:#22d3ee;--a3:#ff6ba6;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0a0c1a;--surface:#141833;--text:#eef0ff;--muted:#a3abc9;--border:#262c52;--a1:#8b73ff;--a2:#22d3ee;--a3:#ff6ba6;color-scheme:dark}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 56px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;overflow-x:hidden}
+a{color:var(--a2);text-decoration:none}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px;position:relative}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:9}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+nav .wrap{display:flex;gap:16px;align-items:center;height:54px;overflow-x:auto;white-space:nowrap}
+nav b{margin-right:auto;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;font-size:18px}
+nav a{color:var(--muted);font-size:14px}nav a:hover{color:var(--text)}
+#tg{border:1px solid var(--border);background:var(--surface);color:var(--text);border-radius:99px;width:34px;height:34px;cursor:pointer;flex:none}
+header{position:relative;padding:84px 0 56px;overflow:hidden}
+.blob{position:absolute;border-radius:50%;filter:blur(70px);opacity:.35;animation:fl 14s ease-in-out infinite;z-index:0}
+.b1{width:340px;height:340px;background:var(--a1);top:-80px;right:-60px}
+.b2{width:280px;height:280px;background:var(--a3);bottom:-60px;left:-80px;animation-delay:-5s}
+.b3{width:220px;height:220px;background:var(--a2);top:40%;left:45%;animation-delay:-9s}
+@keyframes fl{50%{transform:translate(30px,-30px) scale(1.1)}}
+header .wrap{z-index:1}
+.hi{color:var(--a2);font-weight:600;letter-spacing:.08em;font-size:14px;text-transform:uppercase}
+h1{font-size:clamp(36px,8vw,62px);line-height:1.05;margin:8px 0 14px}
+h1 span,.grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.type{font-size:clamp(18px,3.5vw,24px);font-weight:600;min-height:1.6em}
+.type::after{content:"|";margin-left:2px;animation:bl 1s steps(1) infinite;color:var(--a3)}
+@keyframes bl{50%{opacity:0}}
+.lead{color:var(--muted);max-width:640px;font-size:18px}
+.btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+.btn{padding:11px 20px;border-radius:10px;border:1px solid var(--border);background:var(--surface);color:var(--text);font-weight:600;font-size:15px;transition:transform .2s}
+.btn:hover{transform:translateY(-3px)}
+.btn.p{background:var(--grad);border:0;color:#fff}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}
+.chip{font-size:13px;padding:4px 12px;border-radius:99px;border:1px solid var(--border);background:var(--surface);color:var(--muted)}
+section{padding:40px 0}
+h2{font-size:28px;margin:0 0 20px}
+h2::after{content:"";display:block;width:56px;height:4px;border-radius:4px;background:var(--grad);margin-top:8px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-top:20px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:18px;transition:transform .25s,border-color .25s,box-shadow .25s}
+.card:hover{transform:translateY(-4px);border-color:var(--a1);box-shadow:0 10px 30px -12px var(--a1)}
+.stat b{display:block;font-size:32px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat span{color:var(--muted);font-size:14px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.tab{cursor:pointer;border:1px solid var(--border);background:var(--surface);color:var(--text);border-radius:99px;padding:6px 14px;font:inherit;font-size:14px}
+.tab.on{background:var(--grad);border-color:transparent;color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.card h3{margin:0 0 10px;font-size:16px}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:13px;padding:3px 10px;border-radius:99px;background:color-mix(in srgb,var(--a1) 14%,transparent);color:var(--text);border:1px solid color-mix(in srgb,var(--a1) 30%,transparent)}
+.hide{display:none}
+.flow{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:14px}
+.src{padding:6px 14px;border-radius:10px;font-weight:700;font-size:14px;color:#fff}
+.s1{background:#ff9900;color:#222}.s2{background:#34a853}.s3{background:#6d7bb3}.s4{background:#0078d4}
+.ph{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:8px}
+.ph button{cursor:pointer;border:1px solid var(--border);background:var(--surface);color:var(--text);border-radius:10px;padding:10px 6px;font:inherit;font-size:14px;font-weight:600}
+.ph button.on{border-color:var(--a2);box-shadow:0 0 0 2px color-mix(in srgb,var(--a2) 40%,transparent)}
+#phd{margin-top:12px;color:var(--muted)}
+.tl{border-left:3px solid var(--a1);padding-left:18px;margin-left:6px}
+.job{margin-bottom:16px;position:relative}
+.job::before{content:"";position:absolute;left:-27px;top:22px;width:13px;height:13px;border-radius:50%;background:var(--grad)}
+.meta{color:var(--muted);font-size:14px;margin-bottom:8px}
+.job ul{margin:0;padding-left:20px}.job li{margin-bottom:6px}
+footer{padding:36px 0 60px;color:var(--muted);font-size:14px;border-top:1px solid var(--border)}
+.js .rv{opacity:0;transform:translateY(24px);transition:opacity .6s,transform .6s}
+.js .rv.in{opacity:1;transform:none}
+::selection{background:var(--a1);color:#fff}
+::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:linear-gradient(var(--a1),var(--a3));border-radius:10px}
+#pg{position:fixed;top:env(safe-area-inset-top,0px);left:0;height:3px;width:0;background:var(--grad);z-index:11;box-shadow:0 0 12px var(--a2)}
+body{background-image:radial-gradient(circle at 12% 0%,color-mix(in srgb,var(--a1) 16%,transparent),transparent 42%),radial-gradient(circle at 92% 35%,color-mix(in srgb,var(--a3) 12%,transparent),transparent 42%),radial-gradient(circle at 10% 85%,color-mix(in srgb,var(--a2) 12%,transparent),transparent 40%);background-attachment:fixed}
+header::before{content:"";position:absolute;inset:0;background-image:linear-gradient(var(--border) 1px,transparent 1px),linear-gradient(90deg,var(--border) 1px,transparent 1px);background-size:44px 44px;-webkit-mask-image:radial-gradient(ellipse at 50% 30%,#000 20%,transparent 72%);mask-image:radial-gradient(ellipse at 50% 30%,#000 20%,transparent 72%);opacity:.6;z-index:0}
+h1{font-size:clamp(40px,9vw,72px);letter-spacing:-.02em}
+h1 span{background-size:200% 200%;animation:gs 7s ease infinite}
+@keyframes gs{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+.btn.p{background-size:200% 200%;animation:gs 6s ease infinite;box-shadow:0 8px 24px -8px var(--a1)}
+.btn:hover{box-shadow:0 10px 28px -10px var(--a2)}
+h2{font-size:32px;letter-spacing:-.01em}
+nav a{position:relative;padding:4px 0}
+nav a::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--grad);transition:width .3s}
+nav a:hover::after,nav a.act::after{width:100%}nav a.act{color:var(--text)}
+.card{background:color-mix(in srgb,var(--surface) 78%,transparent);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border:1px solid var(--border)}
+.card:not(.job){position:relative;overflow:hidden}
+.card:not(.job)::before{content:"";position:absolute;inset:0;border-radius:inherit;background:radial-gradient(260px circle at var(--mx,50%) var(--my,50%),color-mix(in srgb,var(--a2) 20%,transparent),transparent 70%);opacity:0;transition:opacity .3s;pointer-events:none}
+.card:not(.job):hover::before{opacity:1}
+.card:hover{border-color:transparent;background:linear-gradient(var(--surface),var(--surface)) padding-box,var(--grad) border-box;box-shadow:0 18px 40px -18px var(--a1)}
+.tag{transition:transform .2s,background .2s}
+.tag:hover{transform:translateY(-2px) scale(1.05);background:color-mix(in srgb,var(--a2) 24%,transparent)}
+.stat b{font-size:40px;letter-spacing:-.02em}
+.chip{backdrop-filter:blur(6px);transition:transform .2s,border-color .2s}
+.chip:hover{transform:translateY(-2px);border-color:var(--a2);color:var(--text)}
+.tl{border-left:3px solid transparent;border-image:linear-gradient(var(--a1),var(--a2),var(--a3)) 1}
+.job::before{box-shadow:0 0 0 4px color-mix(in srgb,var(--a2) 30%,transparent)}
+.tab{transition:transform .2s}.tab:hover{transform:translateY(-2px)}
+.ph button{transition:transform .2s,border-color .2s}.ph button:hover{transform:translateY(-2px);border-color:var(--a1)}
+footer{border-top:0;position:relative}
+footer::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:var(--grad)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.js .rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div id="pg"></div>
+<nav><div class="wrap"><b>PKI.cloud</b><a href="#about">About</a><a href="#skills">Skills</a><a href="#migration">Migration</a><a href="#experience">Experience</a><a href="#certs">Credentials</a><a href="#contact">Contact</a><button id="tg" aria-label="Toggle theme">◐</button></div></nav>
+
+<header>
+<div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+<div class="wrap">
+<div class="hi">Hi, I’m</div>
+<h1>Pavan Kalyan <span>Itreddy</span></h1>
+<div class="type" id="type"></div>
+<p class="lead">Multi-cloud engineer working across Azure, AWS and Google Cloud. I design secure, governed landing zones, automate delivery with DevOps, and migrate enterprise workloads at scale.</p>
+<div class="btns"><a class="btn p" href="Kalyan_Itreddy_Resume.pdf" download>⬇ Download resume</a><a class="btn" href="#contact">Let’s talk</a><a class="btn" href="#skills">Explore skills</a><a class="btn" href="https://www.linkedin.com/in/itreddy-pavan-kalyan-reddy-638a3b256/" target="_blank" rel="noopener">LinkedIn</a></div>
+<div class="chips"><span class="chip">Azure</span><span class="chip">AWS</span><span class="chip">GCP</span><span class="chip">Multi-cloud architecture</span><span class="chip">Security &amp; governance</span><span class="chip">Kubernetes &amp; Docker</span><span class="chip">Cloud migration</span><span class="chip">DevOps</span><span class="chip">Data &amp; AI infrastructure</span></div>
+</div>
+</header>
+
+<div class="wrap">
+<section id="about" class="rv">
+<h2>About</h2>
+<p>I’m a Cloud Engineer at HCLTech in Hyderabad with 3+ years across cloud operations, architecture and migrations. My work spans solution architecture, security and governance, DevOps automation, and cloud data platforms, and I work comfortably in Azure, AWS and GCP. I’m also focused on hybrid cloud architecture, AI infrastructure strategy and HPC.</p>
+<div class="stats">
+<div class="card stat"><b data-n="3" data-s="+">0</b><span>years in cloud</span></div>
+<div class="card stat"><b data-n="3">0</b><span>hyperscalers</span></div>
+<div class="card stat"><b data-n="4">0</b><span>certifications</span></div>
+<div class="card stat"><b data-n="3" data-s="×">0</b><span>Best Performer</span></div>
+</div>
+</section>
+
+<section id="skills" class="rv">
+<h2>Skills</h2>
+<div class="tabs" id="tabs"><button class="tab on" data-f="all">All</button><button class="tab" data-f="cloud">Multi-cloud</button><button class="tab" data-f="arch">Architecture</button><button class="tab" data-f="sec">Security &amp; governance</button><button class="tab" data-f="dev">DevOps &amp; IaC</button><button class="tab" data-f="mig">Migration</button><button class="tab" data-f="data">Data &amp; AI</button><button class="tab" data-f="ops">Operations</button></div>
+<div class="grid" id="sk">
+<div class="card" data-c="cloud"><h3>☁️ Azure</h3><div class="tags"><span class="tag">VMs &amp; VMSS</span><span class="tag">AKS</span><span class="tag">App Services</span><span class="tag">Functions</span><span class="tag">Virtual Desktop</span><span class="tag">VNets</span><span class="tag">Entra ID</span></div></div>
+<div class="card" data-c="cloud"><h3>🟠 AWS</h3><div class="tags"><span class="tag">EC2</span><span class="tag">S3</span><span class="tag">VPC</span><span class="tag">IAM</span><span class="tag">Multi-account design</span><span class="tag">DevOps Pro certified</span></div></div>
+<div class="card" data-c="cloud"><h3>🟢 Google Cloud</h3><div class="tags"><span class="tag">Compute</span><span class="tag">Storage</span><span class="tag">Networking</span><span class="tag">Service accounts</span><span class="tag">IAM</span></div></div>
+<div class="card" data-c="arch"><h3>🏗️ Architecture</h3><div class="tags"><span class="tag">Multi-cloud architecture</span><span class="tag">Solution architecture</span><span class="tag">Hybrid cloud</span><span class="tag">Landing zones</span><span class="tag">HLD / LLD</span><span class="tag">Hub-and-spoke networking</span></div></div>
+<div class="card" data-c="sec"><h3>🔐 Security &amp; governance</h3><div class="tags"><span class="tag">Custom RBAC</span><span class="tag">Managed identities</span><span class="tag">Azure Policy</span><span class="tag">Key Vault</span><span class="tag">Private Endpoints</span><span class="tag">NSG</span><span class="tag">Access control</span></div></div>
+<div class="card" data-c="dev"><h3>⚙️ DevOps &amp; IaC</h3><div class="tags"><span class="tag">Terraform</span><span class="tag">ARM Templates</span><span class="tag">Azure DevOps</span><span class="tag">GitHub Actions</span><span class="tag">Git</span><span class="tag">Kubernetes</span><span class="tag">PowerShell</span><span class="tag">Azure CLI</span><span class="tag">Python</span></div></div>
+<div class="card" data-c="dev"><h3>🐳 Containers &amp; Kubernetes</h3><div class="tags"><span class="tag">AKS</span><span class="tag">Kubernetes</span><span class="tag">Docker</span><span class="tag">Container-based solutions</span><span class="tag">OpenShift (working knowledge)</span></div></div>
+<div class="card" data-c="data"><h3>🌐 Web apps, APIs &amp; databases</h3><div class="tags"><span class="tag">App Services</span><span class="tag">Functions</span><span class="tag">Logic Apps</span><span class="tag">REST API automation</span><span class="tag">Event Hub</span><span class="tag">SQL</span><span class="tag">Oracle</span><span class="tag">Cosmos DB</span><span class="tag">Data migration</span></div></div>
+<div class="card" data-c="mig"><h3>🚚 Migration</h3><div class="tags"><span class="tag">Datacenter exit</span><span class="tag">Azure Migrate</span><span class="tag">Site Recovery</span><span class="tag">Wave planning</span><span class="tag">Dependency mapping</span><span class="tag">VMware</span><span class="tag">SAP</span></div></div>
+<div class="card" data-c="data"><h3>📊 Data &amp; AI</h3><div class="tags"><span class="tag">Azure AI Foundry</span><span class="tag">Data Factory</span><span class="tag">AI infrastructure</span><span class="tag">HPC</span><span class="tag">Backup &amp; DR</span></div></div>
+<div class="card" data-c="ops"><h3>📈 Monitoring &amp; operations</h3><div class="tags"><span class="tag">Azure Monitor</span><span class="tag">Log Analytics</span><span class="tag">App Insights</span><span class="tag">Cost Management</span><span class="tag">ServiceNow</span><span class="tag">Runbooks</span><span class="tag">SLA management</span></div></div>
+</div>
+</section>
+
+<section id="migration" class="rv">
+<h2>How I run a migration</h2>
+<div class="flow"><span class="src s1">AWS</span><span class="src s2">GCP</span><span class="src s3">VMware</span><span>→</span><span class="src s4">Azure landing zone</span></div>
+<div class="ph" id="ph"><button class="on" data-i="0">1 · Discover</button><button data-i="1">2 · Assess</button><button data-i="2">3 · Landing zone</button><button data-i="3">4 · Replicate</button><button data-i="4">5 · Cutover</button><button data-i="5">6 · Hypercare</button></div>
+<div class="card" id="phd" style="margin-top:12px"></div>
+</section>
+
+<section id="experience" class="rv">
+<h2>Experience</h2>
+<div class="tl">
+<div class="card job"><h3>Cloud Engineer II (Specialist), HCLTech</h3><div class="meta">Hyderabad · Aug 2025 – Present</div><ul>
+<li>Deliver datacenter exit and migration programs to Azure from VMware, AWS and Google Cloud.</li>
+<li>Build landing zones with networking, identity, security and governance controls using Terraform and Azure DevOps.</li>
+<li>Run Azure Migrate replication, cutovers and hypercare, then tune performance and cost.</li>
+<li>Worked on SAP migrations through to the live production cutover.</li>
+<li>Plan migration waves with client stakeholders, including dependency mapping and choosing rehost or replatform.</li>
+<li>Contribute to HLD and LLD discussions and write runbooks for BAU handover.</li></ul></div>
+<div class="card job"><h3>Cloud Engineer I (Analyst), HCLTech</h3><div class="meta">Hyderabad · Sep 2023 – Aug 2025</div><ul>
+<li>Provisioned and supported Azure IaaS and PaaS, AKS, and AWS workloads for enterprise customers.</li>
+<li>Ran production support: incidents, patching, and monitoring with Azure Monitor and Log Analytics.</li>
+<li>Applied governance with custom RBAC, managed identities and Azure Policy; managed certificates and key rotation in Key Vault.</li>
+<li>Automated operations with PowerShell, Azure CLI, Logic Apps, Terraform and pipelines; reduced cost through capacity planning.</li></ul></div>
+<div class="card job"><h3>Intern, HCL TechBee Program</h3><div class="meta">HCLTech, Noida · Aug 2022 – Sep 2023</div></div>
+</div>
+</section>
+
+<section id="certs" class="rv">
+<h2>Credentials</h2>
+<div class="grid">
+<div class="card"><h3>Azure Administrator Associate</h3><span class="tag">AZ-104</span></div>
+<div class="card"><h3>Azure Fundamentals</h3><span class="tag">AZ-900</span></div>
+<div class="card"><h3>AWS Certified DevOps Engineer – Professional</h3><span class="tag">DOP-C02</span></div>
+<div class="card"><h3>Google Cloud Associate Cloud Engineer</h3><span class="tag">GCP</span></div>
+<div class="card"><h3>BCA, SASTRA University</h3><span class="tag">2023 – 2026 · CGPA 8.6/10</span></div>
+<div class="card"><h3>🏆 Best Performer Award</h3><span class="tag">2023-24 · 2024-25 · 2025-26</span></div>
+</div>
+</section>
+
+<section id="contact" class="rv">
+<h2>Let’s connect</h2>
+<div class="card"><p style="margin-top:0">Open to multi-cloud, architecture and migration roles, and open to relocation.</p>
+<div class="btns" style="margin-top:0"><a class="btn p" href="mailto:kallyanreddy45@gmail.com">kallyanreddy45@gmail.com</a><a class="btn" href="Kalyan_Itreddy_Resume.pdf" download>Download resume</a><a class="btn" href="https://www.linkedin.com/in/itreddy-pavan-kalyan-reddy-638a3b256/" target="_blank" rel="noopener">LinkedIn</a></div></div>
+</section>
+</div>
+<footer><div class="wrap">© 2026 Pavan Kalyan Itreddy · Hyderabad, India</div></footer>
+
+<script>
+document.documentElement.classList.add('js');
+var $=function(s){return document.querySelector(s)},$$=function(s){return Array.prototype.slice.call(document.querySelectorAll(s))};
+$('#tg').onclick=function(){var r=document.documentElement,d=r.dataset.theme?r.dataset.theme==='dark':matchMedia('(prefers-color-scheme:dark)').matches;r.dataset.theme=d?'light':'dark'};
+var roles=['Multi-Cloud Engineer','Cloud Architecture & Solutions','Cloud Security & Governance','DevOps & Automation','Migration Specialist'],ri=0,ci=0,del=false,t=$('#type');
+(function tick(){var w=roles[ri];ci+=del?-1:1;t.textContent=w.slice(0,ci);var s=del?35:70;if(!del&&ci===w.length){del=true;s=1400}else if(del&&ci===0){del=false;ri=(ri+1)%roles.length;s=300}setTimeout(tick,s)})();
+$$('.tab').forEach(function(b){b.onclick=function(){$$('.tab').forEach(function(x){x.classList.remove('on')});b.classList.add('on');var f=b.dataset.f;$$('#sk .card').forEach(function(c){c.classList.toggle('hide',f!=='all'&&c.dataset.c!==f)})}});
+var ph=[['Discover','Inventory servers and applications, capture utilization, and map dependencies so nothing is left behind.'],['Assess','Decide the right path per application (rehost, replatform or retire), size targets, and group workloads into migration waves.'],['Landing zone','Build the Azure foundation as code: networking, identity, RBAC, policy and security controls, delivered through Terraform and Azure DevOps.'],['Replicate','Set up Azure Migrate replication from AWS, GCP or VMware, then validate data sync and test failover ahead of the window.'],['Cutover','Execute in the agreed migration window with a rollback plan, then validate applications with the client.'],['Hypercare','Resolve post-migration issues, tune performance and cost, and hand over to BAU with runbooks and documentation.']];
+function sp(i){$$('#ph button').forEach(function(b,j){b.classList.toggle('on',i===j)});$('#phd').innerHTML='<strong>'+ph[i][0]+'.</strong> '+ph[i][1]}
+$$('#ph button').forEach(function(b,i){b.onclick=function(){sp(i)}});sp(0);
+function ct(e){var n=+e.dataset.n,s=e.dataset.s||'',v=0,st=setInterval(function(){v++;e.textContent=v+(v===n?s:'');if(v>=n)clearInterval(st)},300)}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');e.target.querySelectorAll('[data-n]').forEach(ct);io.unobserve(e.target)}})},{threshold:.12});
+$$('.rv').forEach(function(e){io.observe(e)});
+(function(){var pg=$('#pg'),links=$$('nav a[href^="#"]'),secs=links.map(function(a){return $(a.getAttribute('href'))});
+addEventListener('scroll',function(){var h=document.documentElement,p=h.scrollTop/Math.max(1,h.scrollHeight-h.clientHeight);pg.style.width=(p*100)+'%';var cur=-1;secs.forEach(function(s,i){if(s&&s.getBoundingClientRect().top<120)cur=i});links.forEach(function(a,i){a.classList.toggle('act',i===cur)})},{passive:true});
+document.addEventListener('pointermove',function(e){var c=e.target.closest&&e.target.closest('.card');if(c){var r=c.getBoundingClientRect();c.style.setProperty('--mx',(e.clientX-r.left)+'px');c.style.setProperty('--my',(e.clientY-r.top)+'px')}})})();
+</script>
+</body>
+</html>
